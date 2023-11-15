@@ -24,7 +24,6 @@ export const ItemListContainer = () => {
             } else {
                 setItems(response);
             }
-            setItems(response);
         })
         .finally(() => setLoading(false));
     }, [id]);
