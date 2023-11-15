@@ -1,6 +1,6 @@
-import {Link} from "react-router-dom"; 
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import {Link} from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
 
 export const Item = ({ item }) => {
     
