@@ -10,14 +10,11 @@ export const ItemListContainer = () => {
     const [loading, setLoading] = useState(true);
 
     const {id} = useParams();
-    
-    console.log(id);
 
     useEffect (() => {
         const promise = new Promise((resolve, reject) => {
             setTimeout(() => {resolve(products);}, 2000);
-            
-        })
+        });
 
         promise
           .then((response) => {
