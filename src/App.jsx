@@ -1,13 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import './App.css'
-import { ItemListContainer } from "./components/ItemListContainer"
-import { ItemDetailsContainer } from "./components/ItemDetailsContainer"
-import { NavBar } from './components/NavBar'
+import './App.css';
+import { ItemListContainer } from './components/ItemListContainer';
+import { ItemDetailsContainer } from './components/ItemDetailsContainer';
+import { NavBar } from './components/NavBar';
 
 function App() {
   return (
-    <>
   <BrowserRouter>
       <NavBar />
       <Routes>
@@ -16,8 +15,7 @@ function App() {
           <Route path="/item/:id" element={<ItemDetailsContainer />} />
       </Routes>
   </BrowserRouter>
-    </>
-    )
-}
+    );
+};
 
 export default App;

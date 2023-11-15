@@ -1,21 +1,21 @@
-import {Link} from "react-router-dom"; 
+import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 export const Item = ({ item }) => {
-    
-    return (
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={item.pictureUrl} />
-        <Card.Body>
+ 
+  return (
+  <Card style={{ width: '24rem', height: '36rem' }} className="d-flex flex-column">
+      <Card.Img variant="top" src={item.pictureUrl} style={{width: '100%', height: '60%', objectFit: 'contain'}} />
+      <Card.Body className="flex-grow-1 overflow-hidden">
           <Card.Title>{item.title}</Card.Title>
-          <Card.Text>
-            {item.description}
-          </Card.Text>
-          <Link to={'/item/${item.id}'}>
-            <Button variant="primary">Add to Cart</Button>
-          </Link>
-        </Card.Body>
-      </Card>
-    )
-}
+          <p className="card-text">
+              {item.description}
+          </p>
+      </Card.Body>
+      <Link className="p-3"to={`/item/${item.id}`}>
+          <Button variant="primary">Add to Cart</Button>
+      </Link>
+  </Card>
+  );
+ };

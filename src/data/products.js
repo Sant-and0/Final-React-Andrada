@@ -7,7 +7,7 @@ export const products = [
         price: 349.99,
         category: "Processors",
         brand: "Intel",
-        pictureUrl: "https://example.com/intel_core_i7.jpg"
+        pictureUrl: "https://front.dev.malditohard.com.ar/img/migration/PROCESADOR-INTEL-I7-10700K-1200.webp"
       },
       {
         id: 2,
@@ -16,7 +16,7 @@ export const products = [
         price: 299.99,
         category: "Processors",
         brand: "AMD",
-        pictureUrl: "https://example.com/amd_ryzen_5.jpg"
+        pictureUrl: "https://m.media-amazon.com/images/I/412K5ZUaIoL._AC_.jpg"
       },
       {
         id: 3,
@@ -25,7 +25,7 @@ export const products = [
         price: 699.99,
         category: "Graphics Cards",
         brand: "NVIDIA",
-        pictureUrl: "https://example.com/nvidia_rtx_3080.jpg"
+        pictureUrl: "https://www.pbtech.co.nz/imgprod/V/G/VGAPNY3083__1.jpg?h=1177690365"
       },
       {
         id: 4,
@@ -34,7 +34,7 @@ export const products = [
         price: 499.99,
         category: "Graphics Cards",
         brand: "AMD",
-        pictureUrl: "https://example.com/amd_rx_6700xt.jpg"
+        pictureUrl: "https://http2.mlstatic.com/D_NQ_NP_880554-MLA47886598513_102021-O.webp"
       },
       {
         id: 5,
@@ -43,7 +43,7 @@ export const products = [
         price: 189.99,
         category: "Motherboards",
         brand: "ASUS",
-        pictureUrl: "https://example.com/asus_rog_b550.jpg"
+        pictureUrl: "https://http2.mlstatic.com/D_NQ_NP_900439-MLA71807300389_092023-O.webp"
       },
       {
         id: 6,
@@ -52,7 +52,7 @@ export const products = [
         price: 89.99,
         category: "RAM",
         brand: "Corsair",
-        pictureUrl: "https://example.com/corsair_vengeance_lpx.jpg"
+        pictureUrl: "https://http2.mlstatic.com/D_NQ_NP_873084-MLA31352174686_072019-O.webp"
       },
       {
         id: 7,
@@ -61,7 +61,7 @@ export const products = [
         price: 149.99,
         category: "Storage",
         brand: "Samsung",
-        pictureUrl: "https://example.com/samsung_970_evo.jpg"
+        pictureUrl: "https://m.media-amazon.com/images/I/71OYNmVRFhL._AC_SL1500_.jpg"
       },
       {
         id: 8,
@@ -70,7 +70,7 @@ export const products = [
         price: 129.99,
         category: "Power Supplies",
         brand: "EVGA",
-        pictureUrl: "https://example.com/evga_supernova_750.jpg"
+        pictureUrl: "https://images.evga.com/products/gallery/png/220-G5-0750-X1_LG_1.png"
       },
       {
         id: 9,
@@ -79,7 +79,7 @@ export const products = [
         price: 159.99,
         category: "Cooling",
         brand: "NZXT",
-        pictureUrl: "https://example.com/nzxt_kraken_x63.jpg"
+        pictureUrl: "https://hexus.net/media/uploaded/2020/12/c8037aa0-3c5f-44af-8c6c-f7a775ca1ee6.png"
       },
       {
         id: 10,
@@ -88,7 +88,7 @@ export const products = [
         price: 129.99,
         category: "Peripherals",
         brand: "Logitech",
-        pictureUrl: "https://example.com/logitech_g_pro_keyboard.jpg"
+        pictureUrl: "https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/pro-keyboard/pro-keyboard-gallery/deu-pro-gaming-keyboard-gallery-topdown.png"
       },
       {
         id: 11,
@@ -97,7 +97,7 @@ export const products = [
         price: 79.99,
         category: "Peripherals",
         brand: "SteelSeries",
-        pictureUrl: "https://example.com/steelseries_rival_600.jpg"
+        pictureUrl: "https://media.steelseriescdn.com/thumbs/filer_public/4f/ec/4fec8ad0-451b-4b73-87c5-e365e33a02e7/05_rival600_kv_top_hero.png__1920x1080_crop-fit_optimize_subsampling-2.png"
       },
       {
         id: 12,
@@ -106,7 +106,7 @@ export const products = [
         price: 349.99,
         category: "Peripherals",
         brand: "Dell",
-        pictureUrl: "https://example.com/dell_gaming_monitor.jpg"
+        pictureUrl: "https://http2.mlstatic.com/D_NQ_NP_663491-MLU71251637065_082023-O.webp"
       },
       {
         id: 13,
@@ -115,7 +115,7 @@ export const products = [
         price: 99.99,
         category: "Peripherals",
         brand: "HyperX",
-        pictureUrl: "https://example.com/hyperx_cloud_ii.jpg"
+        pictureUrl: "https://http2.mlstatic.com/D_NQ_NP_768138-MLA47886746878_102021-O.webp"
       },
       {
         id: 14,
@@ -124,7 +124,7 @@ export const products = [
         price: 14.99,
         category: "Accessories",
         brand: "Cable Matters",
-        pictureUrl: "https://example.com/cable_matters_usb_c.jpg"
+        pictureUrl: "https://m.media-amazon.com/images/I/61JvMXdLjnL._AC_SL1500_.jpg"
       },
       {
         id: 15,
@@ -133,6 +133,6 @@ export const products = [
         price: 19.99,
         category: "Accessories",
         brand: "NZXT",
-        pictureUrl: "https://example.com/nzxt_puck.jpg"
+        pictureUrl: "https://www.datocms-assets.com/34299/1615599955-puck-feature2-simple-and-versatile.png"
       }
 ]
