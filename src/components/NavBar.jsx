@@ -9,7 +9,7 @@ import { CartWidget } from "./CartWidget"
 
 export const NavBar = () => {
 
-  const categories = products.map (item => item.category)
+  const categories = products.map ((item) => item.category)
   const uniqueCategories = new Set(categories)
 
     return (<>
