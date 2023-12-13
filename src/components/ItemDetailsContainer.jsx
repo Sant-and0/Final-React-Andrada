@@ -1,5 +1,6 @@
 import {useParams} from 'react-router-dom';  
 import {useState, useEffect} from 'react'; 
+import Container from "react-bootstrap/Container";
 
 import { products } from '../data/products';
 
