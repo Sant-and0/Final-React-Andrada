@@ -14,7 +14,7 @@ export const Item = ({ item }) => {
           </p>
       </Card.Body>
       <Link className="p-3"to={`/item/${item.id}`}>
-          <Button variant="primary">Add to Cart</Button>
+          <Button variant="primary">View details</Button>
       </Link>
   </Card>
   );
