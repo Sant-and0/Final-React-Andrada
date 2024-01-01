@@ -13,7 +13,7 @@ export const Item = ({ item }) => {
               {item.description}
           </p>
       </Card.Body>
-      <Link className="p-3"to={`/item/${item.id}`}>
+      <Link className="p-3"to={`/item/${item.docId}`}>
           <Button variant="primary">View details</Button>
       </Link>
   </Card>

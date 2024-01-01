@@ -3,20 +3,30 @@ import { createContext, useState } from "react";
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => { 
-    const[items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
-    const clear = () => setItems ([]);
+  const clear = () => setItems([]);
 
-    const addItem = (item) => 
-      setItems(prev => {
-        return [...prev, item];
-    }) ;
+  const addItem = (item) => 
+    setItems(prev => {
+      const itemExists = prev.find(existingItem => existingItem.id === item.id);
 
-    console.log(items);
+      if (itemExists) {
+        const updatedItems = prev.map(existingItem => 
+          existingItem.id === item.id ? {...existingItem, quantity: existingItem.quantity + 1} : existingItem
+        );
 
-    return (
-        <CartContext.Provider value={{ addItem, clear, items }}>
-            {children}
-        </CartContext.Provider>
-    );
+        return updatedItems;
+      } else {
+        return [...prev, {...item, quantity: 1}];
+      }
+    });
+
+  console.log(items);
+
+  return (
+      <CartContext.Provider value={{ addItem, clear, items }}>
+          {children}
+      </CartContext.Provider>
+  );
 };
