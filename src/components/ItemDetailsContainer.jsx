@@ -6,9 +6,9 @@ import { getFirestore } from "firebase/firestore";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
 import { CartContext } from '../contexts/CartContext';
+import { ItemCounter } from './ItemCounter';
 
 const firebaseApp = initializeApp({
  apiKey: "AIzaSyCUwh9aZtXDRwMbCYASeNcbJksdGBnnGl0",
@@ -25,7 +25,7 @@ export const ItemDetailsContainer = () => {
  const [loading, setLoading] = useState(true);
  const {id} = useParams();
 
- const { addItem } = useContext(CartContext);
+ const { onAdd } = useContext(CartContext);
 
  useEffect (() => { 
  const refDoc = doc(db, "items", id);
@@ -35,6 +35,10 @@ export const ItemDetailsContainer = () => {
  }).finally(() => setLoading(false));
  }, [id]);
  
+const add = (quantity) => {
+   onAdd(item, quantity)
+};
+
  if(loading) {
  return <>Loading...</>;
  };
@@ -50,9 +54,10 @@ export const ItemDetailsContainer = () => {
          <h1>{item.title}</h1>
          <p>${item.price}</p>
          <p>{item.description}</p>
+         <p>Stock: {item.stock}</p>
        </div>
        <div className="ml-3 mt-3">
-         <Button variant="primary" onClick={() => addItem(item)}>Add to cart</Button>
+         <ItemCounter initial={1} stock={item.stock} onAdd={add}/>
        </div>
     </Col>
  </Row>

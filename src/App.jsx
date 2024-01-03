@@ -8,6 +8,7 @@ import { CartProvider } from './contexts/CartContext';
 import React from 'react';
 import Footer from '../src/components/Footer';
 import Cart from './components/Cart';
+import ThanksPage from './components/ThanksPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/category/:id" element={<ItemListContainer />} />
                 <Route path="/item/:id" element={<ItemDetailsContainer />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/thanks/:id" element={<ThanksPage/>} />
             </Routes>
         </BrowserRouter>
         <Footer />
